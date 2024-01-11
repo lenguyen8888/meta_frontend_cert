@@ -2,23 +2,16 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    // Add a Run current file to the debug javascript dropdown
     "version": "0.2.0",
     "configurations": [
         {
             "type": "node",
             "request": "launch",
-            "name": "My Debug Current File",
-            "program": "${file}",
-            "cwd": "${workspaceFolder}"
-        },
-        // Add a JavaScript Debug Terminal to the debug javascript dropdown
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "My JavaScript Debug Terminal",
-            "program": "${workspaceFolder}/index.js",
-            "cwd": "${workspaceFolder}"
+            "name": "Proj Debug File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}"
         }
     ]
 }
