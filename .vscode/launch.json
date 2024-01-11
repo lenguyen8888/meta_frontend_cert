@@ -8,10 +8,17 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Nguyen JavaScript Debug",
+            "name": "My Debug Current File",
             "program": "${file}",
             "cwd": "${workspaceFolder}"
+        },
+        // Add a JavaScript Debug Terminal to the debug javascript dropdown
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "My JavaScript Debug Terminal",
+            "program": "${workspaceFolder}/index.js",
+            "cwd": "${workspaceFolder}"
         }
- 
     ]
 }
