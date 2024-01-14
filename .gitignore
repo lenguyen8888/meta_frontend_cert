@@ -287,3 +287,7 @@ cython_debug/
 # Go IDE files
 .vscode/
 .idea/
+
+node_modules/
+package-lock.json
+package.json
