@@ -1,17 +1,15 @@
-const meal = ["soup", "steak", "ice cream"]
-let [starter] = meal;
-console.log(starter);
+// enter http://www.example.com in the console
+// type 'allow pasting' to the console
+// and paste the following code into the console
 
-let obj = {
-    key: 1,
-    value: 4
-};
+let arr = [
+    'Example Domain',
+    'First Click',
+    'Second Click',
+    'Third Click'
+];
 
-let output = { ...obj };
-output.value -= obj.key;
-
-console.log(output.value);
-
+let h1 = document.querySelector('h1');
 function handleClick() {
     switch (h1.innerText) {
         case arr[0]:
@@ -28,3 +26,5 @@ function handleClick() {
             break;
     }
 }
+
+h1.addEventListener('click', handleClick);
